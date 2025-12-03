@@ -22,6 +22,8 @@ jobs:
     services:
       postgres:
         image: postgres:17.2
+        env:
+          POSTGRES_USER: postgres
 
     steps:
     - uses: actions/checkout@v4
